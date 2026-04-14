@@ -20,7 +20,14 @@
   .hero .badge{display:inline-block;padding:5px 16px;background:rgba(110,247,110,0.1);border:1px solid rgba(110,247,110,0.25);border-radius:100px;font-family:'Golos Text',sans-serif;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:var(--green);font-weight:700;margin-bottom:22px;}
   .hero h1{font-family:'Golos Text',sans-serif;font-size:46px;font-weight:800;line-height:1.1;color:var(--light);max-width:820px;margin:0 auto 14px;letter-spacing:-0.5px;}
   .hero h1 span{color:var(--green);}
-  .hero p{font-size:15px;color:var(--dark-gray);max-width:540px;margin:0 auto;}
+  .hero p{font-size:15px;color:var(--dark-gray);max-width:580px;margin:0 auto;}
+  .hero-metrics{display:flex;align-items:center;justify-content:center;gap:28px;margin:40px auto 14px;max-width:940px;flex-wrap:wrap;}
+  .hero-metric{text-align:center;min-width:180px;}
+  .hero-metric-num{font-family:'Golos Text',sans-serif;font-size:38px;font-weight:800;color:var(--green);line-height:1;letter-spacing:-0.5px;}
+  .hero-metric-label{font-size:12px;color:var(--dark-gray);margin-top:8px;max-width:200px;margin-left:auto;margin-right:auto;line-height:1.45;}
+  .hero-metric-sep{width:1px;height:44px;background:rgba(255,255,255,0.12);}
+  .hero-footnote{font-size:11px;color:var(--dark-gray);opacity:0.7;max-width:540px;margin:6px auto 0;}
+  @media (max-width:760px){.hero-metric-sep{display:none;}.hero-metrics{gap:20px;}}
   .container{max-width:1100px;margin:0 auto;padding:0 48px;}
   .section{padding:72px 0;border-bottom:1px solid var(--border);}
   .overline{font-family:'Golos Text',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--blue);font-weight:700;margin-bottom:8px;}
@@ -197,28 +204,67 @@
 </div>
 
 <div class="hero">
-  <h1>See the lifecycle. Not just <span>one send.</span></h1>
-  <p>Three personas that actually split your list. One promo email, rebuilt in-brand. A flow-by-flow roadmap for what comes next.</p>
+  <div class="badge">Reuzel × scandiweb · Email growth plan</div>
+  <h1>Up to <span>40% of revenue</span> lives in the inbox. Yours isn't there yet.</h1>
+  <p>Every send in-brand, every send routed to the right customer, every send earning. Here's what that program looks like for Reuzel.</p>
+
+  <div class="hero-metrics">
+    <div class="hero-metric">
+      <div class="hero-metric-num">30–40%</div>
+      <div class="hero-metric-label">of DTC revenue from email in a mature program</div>
+    </div>
+    <div class="hero-metric-sep"></div>
+    <div class="hero-metric">
+      <div class="hero-metric-num">4–8%</div>
+      <div class="hero-metric-label">welcome CVR when personalized (vs 1–2% generic)</div>
+    </div>
+    <div class="hero-metric-sep"></div>
+    <div class="hero-metric">
+      <div class="hero-metric-num">$1.50–2.50</div>
+      <div class="hero-metric-label">revenue / recipient from post-purchase flows</div>
+    </div>
+  </div>
+  <p class="hero-footnote">Benchmarks from DTC men's grooming programs. Your baseline lands in week one once we have ESP access.</p>
 </div>
 
+<!-- ============ 01. OUR VISION — TEMPLATES ============ -->
+<div class="section" style="background:var(--surface);">
+  <div class="container">
+    <div class="overline">01 · Our vision</div>
+    <h2>How every Reuzel email could convert.</h2>
+    <p class="subtitle">This is the bar for every send in your program — hero that stops the scroll, education that sells the product, offer that converts. Same craft applied to every flow, every persona, every season.</p>
 
-<!-- INDUSTRY POTENTIAL BAND -->
-<div style="background:#10132C;border-top:1px solid rgba(255,255,255,0.08);padding:28px 48px;text-align:center;">
-  <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;">
-    <div style="font-family:'Golos Text',sans-serif;font-size:40px;font-weight:800;color:#6EF76E;line-height:1;letter-spacing:-1px;">30–40%</div>
-    <div style="text-align:left;max-width:540px;color:#DADCF1;font-size:14px;line-height:1.55;">
-      <div style="font-family:'Golos Text',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:#6EF76E;font-weight:700;margin-bottom:4px;">INDUSTRY BENCHMARK</div>
-      A mature, well-segmented email program typically drives <b style="color:#FFFFFF;">30–40% of total DTC revenue</b> in men's grooming. That's the ceiling to aim at — and it starts with lifecycle, not one-off promos.
+    <div class="inspo-grid">
+      <figure class="inspo-card">
+        <div class="inspo-frame"><img src="assets/reuzel-inspiration-1.png" alt="Reuzel Prep vs Textures — editorial hero"></div>
+        <figcaption>Editorial hero — portrait-driven, offer in the first fold. Works for launches &amp; seasonal.</figcaption>
+      </figure>
+      <figure class="inspo-card">
+        <div class="inspo-frame"><img src="assets/reuzel-inspiration-2.png" alt="Reuzel Prep vs Textures — product education"></div>
+        <figcaption>Product education — "vs" structure that teaches, then converts. The workhorse layout.</figcaption>
+      </figure>
+      <figure class="inspo-card">
+        <div class="inspo-frame"><img src="assets/reuzel-inspiration-3.png" alt="Reuzel Prep vs Textures — offer close"></div>
+        <figcaption>Offer close — stacked % OFF rhythm. Unmistakably Reuzel, unmistakably a buy button.</figcaption>
+      </figure>
     </div>
+
+    <div class="inspo-tokens">
+      <div class="inspo-token"><span class="inspo-token-label">Stops the scroll</span><span class="inspo-token-value">Portrait + massive offer type + CTA in the first fold</span></div>
+      <div class="inspo-token"><span class="inspo-token-label">Teaches, then sells</span><span class="inspo-token-value">Educate (vs) → pair → close — every time</span></div>
+      <div class="inspo-token"><span class="inspo-token-label">On-brand always</span><span class="inspo-token-value">Cobalt / Orange / Bone on Black — no stock imagery</span></div>
+      <div class="inspo-token"><span class="inspo-token-label">Unmistakably Reuzel</span><span class="inspo-token-value">Barber-floor voice, imperative, zero fluff</span></div>
+    </div>
+
   </div>
 </div>
 
-<!-- ============ 01. PERSONAS ============ -->
+<!-- ============ 02. PERSONAS ============ -->
 <div class="section">
   <div class="container">
-    <div class="overline">01 · Who's actually on your list</div>
-    <h2>Three lifecycle personas. Different need.</h2>
-    <p class="subtitle">With 95 countries of barbershops carrying Reuzel, your list isn't a typical DTC list. The biggest lever isn't a creative refresh — it's recognizing that a new customer, a replenisher, and a pro barber shouldn't be getting the same email.</p>
+    <div class="overline">02 · Personalization at scale</div>
+    <h2>One template, three customers, three emails.</h2>
+    <p class="subtitle">The fastest revenue lever isn't a creative refresh — it's recognizing that a new customer, a replenisher, and a pro barber shouldn't be getting the same email. With 95 countries of barbershops carrying Reuzel, your list is built for this.</p>
 
     <div class="persona-grid">
       <div class="persona-card active" data-persona="new" onclick="showPersona('new')">
@@ -421,51 +467,12 @@
   </div>
 </div>
 
-<!-- ============ 02. INSPIRATION — YOUR OWN CRAFT ============ -->
-<div class="section" style="background:var(--surface);">
-  <div class="container">
-    <div class="overline">02 · The inspiration</div>
-    <h2>Built on your own craft.</h2>
-    <p class="subtitle">Reuzel's Prep vs Textures sends already nail the brand: bold type, editorial structure, product education, confident offer. We took that grammar and turned it into a templatizable skeleton that holds across the lifecycle.</p>
-
-    <div class="inspo-grid">
-      <figure class="inspo-card">
-        <div class="inspo-frame"><img src="assets/reuzel-inspiration-1.png" alt="Reuzel Prep vs Textures — editorial hero"></div>
-        <figcaption>Editorial hero · "Rough up the finish" — portrait-driven, offer baked in.</figcaption>
-      </figure>
-      <figure class="inspo-card">
-        <div class="inspo-frame"><img src="assets/reuzel-inspiration-2.png" alt="Reuzel Prep vs Textures — product education"></div>
-        <figcaption>Product education · Prep vs Textures split — explains, then sells.</figcaption>
-      </figure>
-      <figure class="inspo-card">
-        <div class="inspo-frame"><img src="assets/reuzel-inspiration-3.png" alt="Reuzel Prep vs Textures — offer close"></div>
-        <figcaption>Offer close · stacked 20% OFF rhythm — unmistakably Reuzel.</figcaption>
-      </figure>
-    </div>
-
-    <div class="inspo-tokens">
-      <div class="inspo-token"><span class="inspo-token-label">Hero grammar</span><span class="inspo-token-value">Portrait + massive offer type + CTA in first fold</span></div>
-      <div class="inspo-token"><span class="inspo-token-label">Structure</span><span class="inspo-token-value">Educate (vs) → pair → close</span></div>
-      <div class="inspo-token"><span class="inspo-token-label">Palette</span><span class="inspo-token-value">Cobalt / Orange / Bone on Black</span></div>
-      <div class="inspo-token"><span class="inspo-token-label">Voice</span><span class="inspo-token-value">Barber-floor, imperative, zero fluff</span></div>
-    </div>
-
-    <div class="tab-insight">
-      <div>
-        <div class="metric">30–40%</div>
-        <div class="metric-label">OF DTC REVENUE FROM EMAIL · WHEN OPTIMIZED</div>
-      </div>
-      <div class="desc">A mature, well-segmented email program drives <strong>30–40% of total DTC revenue</strong> in men's grooming. The craft is already here — the lever is <strong>consistency across every send and every persona</strong>. We'll baseline the real numbers in week one of the retainer (full flow audit once ESP access is granted).</div>
-    </div>
-  </div>
-</div>
-
 <!-- ============ 03. FLOW ROADMAP ============ -->
 <div class="section">
   <div class="container">
     <div class="overline">03 · Beyond the single send</div>
-    <h2>What the rest of the lifecycle would look like.</h2>
-    <p class="subtitle">Each flow split by the three personas. Benchmarks from DTC grooming programs — your real numbers baseline in week one once we have ESP access.</p>
+    <h2>The full lifecycle, flow by flow.</h2>
+    <p class="subtitle">Welcome · Browse · Post-purchase · Win-back — each split by the three personas above. This is where the 30–40% revenue number compounds.</p>
 
     <div class="tabs">
       <div class="tab-nav">
